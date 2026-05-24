@@ -590,4 +590,113 @@
       font-size: 0.78rem;
       color: var(--muted);
     }
+
+    /* ── RESPONSIVE / MOBILE ── */
+  @media (max-width: 768px) {
+
+    nav {
+      padding: 16px 20px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .hero {
+      padding: 120px 20px 60px;
+      min-height: 100svh;
+    }
+
+    .hero-stats {
+      position: static;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 48px;
+      gap: 0;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 16vw, 5rem);
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      width: 100%;
+      text-align: center;
+      padding: 14px 24px;
+    }
+
+    .section,
+    .how-section,
+    .testimonials-section,
+    .cta-section {
+      padding: 70px 20px;
+    }
+
+    .programs-grid {
+      grid-template-columns: 1fr;
+      gap: 1px;
+    }
+
+    .steps {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    footer {
+      flex-direction: column;
+      gap: 24px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(2.2rem, 10vw, 4rem);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-sub {
+      font-size: 0.95rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .program-card {
+      padding: 32px 24px;
+    }
+
+    .testimonial-card {
+      padding: 24px;
+    }
+  }
   
