@@ -1,0 +1,1 @@
+document.querySelector("#footerText").innerHTML = `© ` + new Date().getFullYear() + ` IRONPEAK. All rights reserved.`;
